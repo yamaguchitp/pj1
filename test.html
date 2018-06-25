@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>ログ情報一覧</title>
+      <script></script>
+  </head>
+
+  <body>
+<h1>ログ情報一覧</h1>
+<table>
+    <tr><th></th><th>世代番号</th><th>アプリケーション</th><th>開始時刻</th><th>終了時刻</th><th>レコード数</th></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+    <tbody style="background:#FF0000">
+    <tr><td></td><td>FFAC</td><td>ap1</td><td>-</td><td>-</td><td>0</td></tr>
+    </tbody>
+    <tr><td></td><td colspan="5">
+    <details>
+    <summary>インシデント：[ERROR]6件 [WARN]2件</summary>
+    <dl>
+        <table>
+        <tr><th>インシデント番号</th><th>種類</th><th>発生日時</th><th>インシデント内容</th><th>サーバ通知状況</th></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        </table>
+    </dl>
+    </details>
+    </td></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+    <tbody style="background:#FF0000">
+    <tr><td><input type="button" id="FFAD" value="送信"></td><td>FFAD</td><td>ap1</td><td>2018/08/12 10:13:12</td><td>2018/08/12 10:45:23</td><td>100</td></tr>
+    </tbody>
+    <tr><td></td><td colspan="5">
+    <details>
+    <summary>インシデント：[ERROR]6件 [WARN]2件</summary>
+    <dl>
+        <table>
+        <tr><th>インシデント番号</th><th>種類</th><th>発生日時</th><th>インシデント内容</th><th>サーバ通知状況</th></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FF0000">ERROR</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        </table>
+    </dl>
+    </details>
+    </td></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+    <tbody style="background:#FFFF00">
+    <tr><td><input type="button" id="FFAE" value="送信" onclick="_sendTrace(FFAE)"></td><td>FFAE</td><td>ap2</td><td>2018/08/12 10:13:12</td><td>2018/08/12 10:45:23</td><td>100</td></tr>
+    </tbody>
+    <tr><td></td><td colspan="5">
+    <details>
+    <summary>インシデント：[ERROR]0件 [WARN]5件</summary>
+    <dl>
+        <table>
+        <tr><th>インシデント番号</th><th>種類</th><th>発生日時</th><th>インシデント内容</th><th>サーバ通知状況</th></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        <tr><td>XXXXXX-21414124</td><td style="background:#FFFF00">WARN</td><td>222222222222</td><td>内容</td><td>〇</td></tr>
+        </table>
+    </dl>
+    </details>
+    </td></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+    <tbody style="background:#00FF00">
+    <tr><td><input type="button" id="FFAF" value="送信"></td><td>FFAF</td><td>ap1</td><td>2018/08/12 10:13:12</td><td>2018/08/12 10:45:23</td><td>100</td></tr>
+    </tbody>
+    <tr><td></td><td colspan="5">
+    <details>
+    <summary>インシデント：[ERROR]0件 [WARN]0件</summary>
+    <dl>
+        <table>
+        <tr><th>インシデント番号</th><th>種類</th><th>発生日時</th><th>インシデント内容</th><th>サーバ通知状況</th></tr>
+        </table>
+    </dl>
+    </details>
+    </td></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+    <tbody style="background:#00FF00">
+    <tr><td><input type="button" id="FFAG" value="送信"></td><td>FFAG</td><td>ap1</td><td>2018/08/12 10:13:12</td><td>2018/08/12 10:45:23</td><td>100</td></tr>
+    </tbody>
+    <tr><td></td><td colspan="5">
+    <details>
+    <summary>インシデント：[ERROR]0件 [WARN]0件</summary>
+    <dl>
+        <table>
+        <tr><th>インシデント番号</th><th>種類</th><th>発生日時</th><th>インシデント内容</th><th>サーバ通知状況</th></tr>
+        </table>
+    </dl>
+    </details>
+    </td></tr>
+
+    <tr><td colspan="6"><hr><td></tr>
+</table>
+</body>
+</html>
